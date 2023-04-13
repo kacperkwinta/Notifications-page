@@ -22,6 +22,20 @@ html {
 	font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+body {
+	background-color: $color-neutral-2;
+    font-size: 1.6rem;
+}
+
+.notifications-box {
+	background-color: $color-neutral-1;
+	margin: 15rem auto;
+	max-width: 100rem;
+	border: 1px solid red;
+	padding: 3.2rem;
+	border-radius: 2rem;
+}
+
 footer {
 	text-align: center;
 }
