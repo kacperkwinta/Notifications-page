@@ -35,7 +35,7 @@ body {
 
 .notifications-box {
 	background-color: $color-neutral-1;
-	margin: 15rem auto;
+	margin: 4.8rem auto;
 	max-width: 75rem;
 	padding: 3.2rem;
 	border-radius: 2rem;
@@ -44,11 +44,11 @@ body {
 .header {
 	@include flex(space-between, center);
 	margin-bottom: 3.2rem;
-}
 
-.wrapper {
-	@include flex(center, center);
-	gap: 1.2rem;
+	.wrapper {
+		@include flex(center, center);
+		gap: 1.2rem;
+	}
 }
 
 .heading-1 {
@@ -75,7 +75,17 @@ body {
 	}
 }
 
-.notifications-container {
+// .notifications-container {}
+
+// for notifications with images
+.notification-content--img {
+	@include flex(space-between, center);
+	width: 100%;
+
+	.post-img {
+		height: 4.8rem;
+		width: 4.8rem;
+	}
 }
 
 .notification {
@@ -97,6 +107,11 @@ body {
 		height: 4.8rem;
 	}
 
+	// for img with private message
+	img[src="./images/avatar-rizky-hasanuddin.webp"] {
+		align-self: flex-start;
+	}
+
 	&-content {
 	}
 
@@ -110,7 +125,7 @@ body {
 
 		&:link,
 		&:visited {
-			color: $color-neutral-5;
+			color: $color-neutral-6;
 			text-decoration: none;
 			font-weight: 800;
 		}
@@ -119,6 +134,11 @@ body {
 		&:active {
 			color: $color-primary-2;
 			cursor: pointer;
+		}
+
+		// link to external group in blue color
+		&--group {
+			color: $color-primary-2 !important;
 		}
 	}
 
