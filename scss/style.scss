@@ -37,14 +37,13 @@ body {
 	background-color: $color-neutral-1;
 	margin: 15rem auto;
 	max-width: 75rem;
-	border: 1px solid red;
 	padding: 3.2rem;
 	border-radius: 2rem;
 }
 
 .header {
 	@include flex(space-between, center);
-	margin-bottom: 3.2rem
+	margin-bottom: 3.2rem;
 }
 
 .wrapper {
@@ -74,6 +73,64 @@ body {
 	&:hover {
 		color: $color-primary-2;
 	}
+}
+
+.notifications-container {
+}
+
+.notification {
+	padding: 1.2rem;
+	border-radius: 8px;
+	background-color: $color-neutral-2;
+	color: $color-neutral-5;
+	word-spacing: 2px;
+
+	@include flex(flex-start, center);
+	gap: 1.8rem;
+
+	&-img {
+		width: 4.8rem;
+		height: 4.8rem;
+	}
+
+	&-content {
+	}
+
+	.profile-name {
+		color: $color-neutral-7;
+		font-weight: 800;
+	}
+
+	.link {
+		transition: all 0.2s ease;
+
+		&:link,
+		&:visited {
+			color: $color-neutral-5;
+			text-decoration: none;
+			font-weight: 800;
+		}
+
+		&:hover,
+		&:active {
+			color: $color-primary-2;
+			cursor: pointer;
+		}
+	}
+
+	.dot {
+		height: 1rem;
+		width: 1rem;
+		display: inline-block;
+		background-color: $color-primary-1;
+		border-radius: 50%;
+	}
+
+	
+}
+
+.notification-time {
+	color: $color-neutral-5;
 }
 
 footer {
