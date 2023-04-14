@@ -148,6 +148,13 @@ body {
 		display: inline-block;
 		background-color: $color-primary-1;
 		border-radius: 50%;
+		transition: all 0.2s linear;
+	}
+
+	.dot--hidden {
+		opacity: 0;
+		user-select: none;
+		visibility: none;
 	}
 
 	.message {
