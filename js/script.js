@@ -12,3 +12,4 @@ btnClearNotifications.addEventListener("click", function () {
 		dot.classList.add("dot--hidden");
 	});
 });
+
